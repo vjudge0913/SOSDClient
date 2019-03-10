@@ -31,6 +31,7 @@
     "webpack-hot-middleware": "^2.21.0"
   },
   "dependencies": {
+    "css-loader": "^0.25.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-polyfill": "^6.26.0",

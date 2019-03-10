@@ -5,6 +5,11 @@ import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 
 import test from './views/test.vue';
+import horizon from './components/horizon.vue';
+import date from './components/date.vue';
+import hrY from './components/hr-y.vue';
+import comIntro from './components/comIntro.vue';
+import excellentWorks from './components/excellentWorks.vue';
 
 Vue.use(Vuex);
 Vue.use(VueRouter);
@@ -13,7 +18,27 @@ const routes = [
     {
         path: "/",
         component: test,
-        meta: { title: "福州大学服务外包与软件设计实验室" }
+        meta: { title: "福州大学服务外包与软件设计实验室" },
+    },
+    {
+        path:"/horizon",
+        component: horizon,
+    }
+    ,{
+        path:"/date",
+        component: date,
+    }
+    ,{
+        path:"/hr-y",
+        component: hrY,
+    }
+    ,{
+        path:"/com-intro",
+        component: comIntro,
+    }
+    ,{
+        path:"/excellent-works",
+        component: excellentWorks,
     }
 ];
 
@@ -35,3 +60,4 @@ new Vue({
     render: h => h(App),
     router
 });
+
